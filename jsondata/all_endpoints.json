@@ -1,0 +1,39 @@
+{
+  "WARNING": [
+    "This is my first time creating an API and it is in sort of a Beta version!",
+    "Some Endpoints do NOT have fail-safe which can and most probably will break your app :)"
+  ],
+  "Api endpoints": [
+    {
+      "/": "Contains useful information about each API endpoint"
+    },
+    {
+      "/v1/errors": "Here all errors that I found will be redirected"
+    },
+    {
+      "/v1/all_countries": "Returns all countries"
+    },
+    {
+      "/v1/continents": "Returns all continents"
+    },
+    {
+      "/v1/continents/<continent_name>": "Returns all countries from that continent",
+      "Example": "/v1/continents/Europe"
+    },
+    {
+      "/v1/continents/<continent_name>/<country_name>": "Returns all cities belonging to that country",
+      "Example": "/v1/continents/Europe/Bulgaria"
+    },
+    {
+      "/v1/countries?continent_name=": "Returns all countries from that continent",
+      "Example": "/v1/countries?continent_name=Europe"
+    },
+    {
+      "/v1/cities?country_name=": "Returns all cities belonging to that country",
+      "Example": "/v1/cities?country_name=Bulgaria"
+    },
+    {
+      "/v1/docs": "HTML documentation and more examples"
+    }
+  ]
+}
